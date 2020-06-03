@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
   }
 });
 
-router.put('/:id/entries', (req, res) => {
+router.post('/:id/entries', (req, res) => {
   try {
     const parseData = parseEntry(req.body);
     const patient = patientService.addEntry(parseData, req.params.id);

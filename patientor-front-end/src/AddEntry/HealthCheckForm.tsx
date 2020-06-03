@@ -78,7 +78,7 @@ const HealthCheckForm: React.FC<Props> = ({ onSubmit, onCancel, diagnoses }) => 
               name="specialist"
             />
             <Field
-              label="Rating"
+              label="healthCheckRating"
               component={NumberField}
               name="healthCheckRating"
               min={0}
